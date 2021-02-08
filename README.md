@@ -29,3 +29,6 @@ There are 3 API that can serve the following queries:
 1) Given an accountNumber, return the latest balance.
 2) Given an accountNumber and a time range such as: Today, Last 7 days, last Month and the more general case of a range between date X and date Y. For example, I should be able to ask for all my transactions between January 8th, 2019 and November 28th, 2020.
 3) Repeat 2, but filter for type. I.E. Shows transactions with type WITHDRAW.
+
+Database: MongoDB
+Note: Used wire mock for testcases.
