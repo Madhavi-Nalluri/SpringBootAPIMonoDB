@@ -23,9 +23,9 @@ public class BalanceController {
 	/**
 	 * 
 	 * @param accountNumber
-	 * @return Latest Balnace for given account number
+	 * @return Latest Balance for given account number
 	 * 
-	 *         Request URL : localhost:1525/balance?accountNumber=123456
+	 *         Request URL : http://localhost:1525/balance?accountNumber=123456
 	 */
 	@GetMapping(value = "/getBalanceByAccountNumber")
 	public Balance getBalanceByAccountNumber(@RequestParam String accountNumber) {

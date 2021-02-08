@@ -27,7 +27,7 @@ public class TransactionsController {
 
 	/**
 	 * 
-	 * Request URL : localhost:1525/transactions/
+	 * Request URL : http://localhost:1525/transactions/
 	 * 
 	 * @param transactions
 	 * @return
@@ -54,7 +54,7 @@ public class TransactionsController {
 	 * @throws Exception
 	 * 
 	 *                   Request URL :
-	 *                   localhost:1525/transactions/getTransactionsWithDateRange/2/5?accountNumber=123456&start=12-01-2020&end=02-05-2021
+	 *                   localhost:http://1525/transactions/getTransactionsWithDateRange/2/5?accountNumber=123456&start=12-01-2020&end=02-28-2021
 	 */
 	@GetMapping(value = "/getTransactionsWithDateRange/{page}/{pageSize}")
 	public ResultListDto<Transactions> getTransactionsWithDateRange(@PathVariable("page") int page,
@@ -76,7 +76,7 @@ public class TransactionsController {
 	 * @throws Exception
 	 * 
 	 *                   Request URL :
-	 *                   localhost:1525/transactions/getTransactionsWithDateRangeAndType/2/5?accountNumber=123456&type=DEPOSIT&start=12-01-2020&end=02-05-2021
+	 *                   localhost:http://1525/transactions/getTransactionsWithDateRangeAndType/2/5?accountNumber=123456&type=DEPOSIT&start=12-01-2020&end=02-28-2021
 	 */
 	@GetMapping(value = "/getTransactionsWithDateRangeAndType/{page}/{pageSize}")
 	public ResultListDto<Transactions> getTransactionsWithDateRangeAndType(@PathVariable("page") int page,
